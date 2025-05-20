@@ -9,7 +9,7 @@ import { CgFileDocument } from "react-icons/cg";
 import { CgMail } from "react-icons/cg";
 import "./NavBar.css";
 
-function NavBar() {
+function Navbar() {
   const [expand, setExpand] = useState(false);
   const [navColour, setNavColour] = useState(false);
 
@@ -57,4 +57,4 @@ function NavBar() {
   );
 }
 
-export default NavBar;
+export default Navbar;

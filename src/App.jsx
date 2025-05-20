@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import NavBar from './Componenets/Navbar/Navbar'
+
 import { Routes, Route } from 'react-router-dom'
 import Home from './Componenets/Home/Home'
 import Footer from './Componenets/Footer/Footer'
@@ -8,6 +8,8 @@ import Projects from './Componenets/Project/Projects'
 import ResumeNew from './Componenets/Resume/ResumeNew'
 import Contact from './Componenets/Contact/ContactForm'
 import Loader from './Loader'
+
+import Navbar from './Componenets/Navbar/Navbar'
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -21,7 +23,7 @@ const App = () => {
   }
   return (
     <div>
-      <NavBar />
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
