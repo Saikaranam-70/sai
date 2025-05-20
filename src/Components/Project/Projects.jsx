@@ -3,8 +3,7 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 
 import leaf from "../../assets/Projects/youtube.png";
-// import emotion from "../../Assets/Projects/chat.png";
-// import editor from "../../Assets/Projects/e-digital.png";
+
 import chatify from "../../assets/Projects/red.png";
 import suicide from "../../assets/Projects/gemini.png";
 import bitsOfCode from "../../assets/Projects/clg.png";
