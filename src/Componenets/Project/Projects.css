@@ -1,0 +1,110 @@
+/* Projects.css */
+.project-section {
+  padding: 80px 20px;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  position: relative;
+  overflow: hidden;
+}
+
+.project-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.project-heading {
+  font-size: 2.8rem;
+  color: white;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.project-heading .purple {
+  color: #9c7aff;
+  background: linear-gradient(90deg, #9c7aff, #6f42c1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.project-section p {
+  color: #0d55c2 !important;
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  padding: 20px 0;
+}
+
+/* Project Card Hover Effect */
+.projects-grid:hover > .project-card:not(:hover) {
+  filter: brightness(0.7);
+  transform: scale(0.98);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .projects-grid {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .project-section {
+    padding: 60px 15px;
+  }
+  
+  .project-heading {
+    font-size: 2.2rem;
+  }
+  
+  .project-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+  
+  .projects-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-section {
+    padding: 50px 10px;
+  }
+  
+  .project-heading {
+    font-size: 1.8rem;
+  }
+  
+  .projects-grid {
+    gap: 20px;
+  }
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.project-container {
+  animation: fadeIn 0.8s ease-out forwards;
+}
+
+.projects-grid > * {
+  animation: fadeIn 0.6s ease-out forwards;
+  animation-delay: calc(var(--order) * 0.1s);
+}

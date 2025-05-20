@@ -1,0 +1,40 @@
+.techstack-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 40px 10px;
+  background-color: #0f0f0f;
+}
+
+.tech-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 25px;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.tech-icons svg {
+  color: #a855f7;
+  font-size: 3rem;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.tech-icons svg:hover {
+  transform: scale(1.2);
+  color: #d8b4fe;
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .tech-icons {
+    gap: 15px;
+  }
+
+  .tech-icons svg {
+    font-size: 2.5rem;
+  }
+}

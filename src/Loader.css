@@ -1,0 +1,20 @@
+/* src/components/Loader.css */
+.loader-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: rgb(0, 0, 0);
+}
+
+.loader-svg {
+  width: 200px;
+  height: 200px;
+  /* animation: rotate 2s linear infinite; */
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
