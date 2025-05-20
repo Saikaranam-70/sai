@@ -1,5 +1,5 @@
 import React from "react";
-import myImg from "../../Assets/me.jpg";
+import myImg from "../../assets/me.jpg"
 import { AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 import "./Home2.css";
