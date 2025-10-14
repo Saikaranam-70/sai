@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import Particle from "../Particle";
-import pdf from "../../assets/resume.pdf"; // Verify this path is correct
+import pdf from "../../assets/SaiKaranam_FullStackDeveloper_Resume.pdf"; // Verify this path is correct
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";

@@ -1,73 +1,129 @@
+/* ===== Project Card Base ===== */
 .project-card {
-  width: 300px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  width: 320px;
+  border-radius: 16px;
   overflow: hidden;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  background-color: #fff;
+  background: linear-gradient(145deg, #1e1e2f, #2a2a40);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-direction: column;
-  transition: transform 0.2s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #fff;
 }
 
 .project-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(130, 90, 255, 0.4);
 }
 
+/* ===== Project Image ===== */
 .project-img {
   width: 100%;
-  height: 180px;
+  height: 190px;
   object-fit: cover;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
+/* ===== Content Section ===== */
 .project-content {
-  padding: 15px;
+  padding: 18px 20px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
+/* ===== Title ===== */
 .project-title {
-  font-size: 1.3rem;
+  font-size: 1.35rem;
+  font-weight: 600;
   margin-bottom: 10px;
-  color: #333;
+  color: #a88bff;
 }
 
+/* ===== Description ===== */
 .project-description {
-  font-size: 1rem;
-  color: #555;
+  font-size: 0.95rem;
+  color: #d0d0e2;
+  line-height: 1.5;
   flex-grow: 1;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   text-align: justify;
 }
 
+/* ===== Buttons Section ===== */
 .project-buttons {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
 }
 
+/* ===== Base Button ===== */
 .btn {
   display: inline-flex;
   align-items: center;
-  background-color: #6f42c1; /* purple */
-  color: white;
-  padding: 8px 14px;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: 500;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 600;
   font-size: 0.9rem;
-  transition: background-color 0.3s ease;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  color: #fff;
+  border: none;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background-color: #5a3399;
+/* ===== Purple (GitHub / Frontend / Backend) ===== */
+.btn-primary {
+  background: linear-gradient(90deg, #7a5af8, #5f3dc4);
 }
 
+.btn-primary:hover {
+  background: linear-gradient(90deg, #8f6bff, #6745e3);
+  box-shadow: 0 0 10px rgba(138, 99, 255, 0.5);
+}
+
+/* ===== Green (Demo) ===== */
 .btn-demo {
-  background-color: #28a745; /* green */
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
 }
 
 .btn-demo:hover {
-  background-color: #1f7a32;
+  background: linear-gradient(90deg, #3ddc84, #219653);
+  box-shadow: 0 0 10px rgba(72, 255, 135, 0.4);
+}
+
+/* ===== Blue (Live) ===== */
+.btn-live {
+  background: linear-gradient(90deg, #3498db, #1d6fa5);
+}
+
+.btn-live:hover {
+  background: linear-gradient(90deg, #4fa3e8, #207eb8);
+  box-shadow: 0 0 10px rgba(80, 180, 255, 0.4);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+  .project-card {
+    width: 100%;
+  }
+
+  .project-content {
+    padding: 15px;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .project-description {
+    font-size: 0.9rem;
+  }
+
+  .project-buttons {
+    justify-content: center;
+  }
 }
