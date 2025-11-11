@@ -11,6 +11,7 @@ import billing from "../../assets/Projects/billing.png";
 import doctor1 from '../../assets/Projects/doctor1.png'
 import doctor2 from '../../assets/Projects/doctor2.png'
 import kolors from '../../assets/Projects/kolors.png'
+import ecommerce from '../../assets/Projects/ecommerce.png'
 
 import "./Projects.css";
 
@@ -34,6 +35,22 @@ function Projects() {
             frontendLink="https://github.com/Saikaranam-70/billingSoftware.git"
             backendLink="https://github.com/Saikaranam-70/billing-software-backend.git"
             liveLink="https://billing-software-omega.vercel.app/"
+          />
+          <ProjectCard
+            imgPath={ecommerce}
+            isBlog={false}
+            title="SaGa E-Commerce"
+            description="This is a full-stack e-commerce web application built using Spring Boot for backend APIs and React (Vite) with Tailwind CSS for the UI.
+The platform allows users to browse products, add items to cart, and proceed to checkout with a smooth and responsive user experience.
+It includes secure user authentication (JWT) and role-based access for user and admin functionalities.
+
+The system is integrated with a Payment Gateway (Razorpay) for safe and reliable online transactions.
+Users can make payments directly during checkout, and order details are recorded and stored securely.
+
+An Admin Panel is provided to manage the product catalog, pricing, and order statuses, ensuring complete control over the store."
+            frontendLink="https://github.com/Saikaranam-70/SaGa.git"
+            backendLink="https://github.com/Saikaranam-70/SaGaBackend.git"
+            // liveLink="https://billing-software-omega.vercel.app/"
           />
           <ProjectCard
             imgPath={doctor1}
